@@ -7,17 +7,17 @@ fetch("https://dummyjson.com/products")
     // create table element
     const table = document.createElement("table");
     // create table header row
-    // const headerRow = table.insertRow();
-    // const idHeader = headerRow.insertCell();
-    // idHeader.innerText = "ID";
-    // const titleHeader = headerRow.insertCell();
-    // titleHeader.innerText = "Title";
-    // const descriptionHeader = headerRow.insertCell();
-    // descriptionHeader.innerText = "Description";
-    // const priceHeader = headerRow.insertCell();
-    // priceHeader.innerText = "Price";
-    // const categoryHeader = headerRow.insertCell();
-    // categoryHeader.innerText = "Category";
+    const headerRow = table.insertRow();
+    const idHeader = headerRow.insertCell();
+    idHeader.innerText = "ID";
+    const titleHeader = headerRow.insertCell();
+    titleHeader.innerText = "Title";
+    const descriptionHeader = headerRow.insertCell();
+    descriptionHeader.innerText = "Description";
+    const priceHeader = headerRow.insertCell();
+    priceHeader.innerText = "Price";
+    const categoryHeader = headerRow.insertCell();
+    categoryHeader.innerText = "Category";
     // create table data rows
     const dataRows = products.map((product) => {
         const dataRow = table.insertRow();
